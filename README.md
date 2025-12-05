@@ -25,8 +25,8 @@ Uses buffer encoding and tokenization for networking of notification data.
     - State(index) - Convert state enum to string
 
 ##    State Enums:
-    0: Ok         3: Positive
+    0: Ok       3: Positive
     1: Good     4: Negative  
-    2: Bad       5: Success
-                        6: Error
-                        7: Alert
+    2: Bad      5: Success
+                6: Error
+                7: Alert

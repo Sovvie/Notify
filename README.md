@@ -21,7 +21,7 @@ Uses buffer encoding and tokenization for networking of notification data.
 ##    Client API:
     - ListenTo(name: string, handler: func<packet>) - Register callback to a specific notification receiving all information pertaining to the sent notification.
     - Await(notify: string, state: enum?) -> Promise<dict<packet>> - Asynchronously wait for a specific notification and state
-        - Await(notify: { string }, state: { number }) -> Promise<dict<packet>> - Asynchronously wait for a specific notification and pipeline, as well as one of many states.
+    - Await(notify: { string }, state: { number }) -> Promise<dict<packet>> - Asynchronously wait for a specific notification and pipeline, as well as one of many states.
     - State(index) - Convert state enum to string
 
 ##    State Enums:

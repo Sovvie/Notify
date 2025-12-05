@@ -11,14 +11,14 @@ Uses buffer encoding and tokenization for networking of notification data.
     - Client-side event listeners
     - Cache/token hydration
 
-##        Type:
-        - Packet = { Message: string, State: number?, Pipeline: string?, Color3: Color3? }
+##    Type:
+    - Packet = { Message: string, State: number?, Pipeline: string?, Color3: Color3? }
 
 ##    Server API:
     - Send(name, packet) - Broadcast to all clients
     - SendClient(player, name, packet) - Send to specific client
 
-##      Client API:
+##    Client API:
     - ListenTo(name: string, handler: func<packet>) - Register callback to a specific notification receiving all information pertaining to the sent notification.
     - Await(notify: string, state: enum?) -> Promise<dict<packet>> - Asynchronously wait for a specific notification and state
         - Await(notify: { string }, state: { number }) -> Promise<dict<packet>> - Asynchronously wait for a specific notification and pipeline, as well as one of many states.
